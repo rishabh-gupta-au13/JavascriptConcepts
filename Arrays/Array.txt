@@ -1,0 +1,32 @@
+1.Shift Method-The shift method removes the first array element and shifts all other element at lower
+index.
+const numbers=[1,2,3,4];
+numbers.shift()
+console.log(numbers) //[2,3,4]
+Note -It modifies orignina array
+
+2.Unshift Method-The unshift method adds a new element to an array at the begining and unshifts older 
+elements.
+const numbers=[1,2,3,4]
+numbers.unshifts(0)
+console.log(numbers) // [0,1,2,3,4]
+Note -It modifies origninal array
+
+3.Concat Method-The concat methods creates new arrray by merging the arrays.concat method can take any
+number of arguments
+const num1=[1,2,3]
+const num2=[4,5,6]
+const num3=num1.concat(num2)
+console.log(num3) //[1,2,3,4,5,6]
+
+4.CopyWithIn-Certainly! The copyWithin() method in JavaScript is used to copy a sequence of elements within an array to another position in the same array. It modifies the array in place and does not change its length. The copyWithin() method takes three parameters:
+target (required): The index at which to copy the sequence to. It can be a positive or negative integer. If negative, it indicates an index from the end of the array.
+start (required): The index at which to start copying elements from. It can be a positive or negative integer. If negative, it indicates an index from the end of the array.
+
+end (optional): The index at which to stop copying elements from. If not specified, copyWithin() will copy until the end of the array. It can be a positive or negative integer.
+const numbers = [1, 2, 3, 4, 5];
+numbers.copyWithin(0, 3);
+// Result: [4, 5, 3, 4, 5]
+
+
+
